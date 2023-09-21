@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="P2_085.js"></script>
+    <title>P2_085</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <div class="header1">P2_085</div>
+
+    <form onsubmit="return validate()">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>
+                        <input id="nama" type="text" />
+                    </td>
+                    <td id="error_nama" style="color: red"> Harap isi field nama!</td> <!--tambahkan element untuk pesan kesalahan-->
+                </tr>
+                <tr>
+                    <td>Mata Kuliah</td>
+                    <td>:</td>
+                    <td>
+                        <select id="matakuliah">
+                            <option value="">Pilih Mata Kuliah</option>
+                            <option value="Matematika">Matematika</option>
+                            <option value="Fisika">Fisika</option>
+                            <option value="Kimia">Kimia</option>
+                        </select>
+                    </td>
+                    <td id="error_matakuliah" style="color: red">Harap pilih Mata Kuliah</td> <!--tambahkan element untuk pesan kesalahan-->
+                </tr>
+                </tr>
+                <tr>
+                    <td>Nilai</td>
+                    <td>:</td>
+                    <td>
+                        <input id="nilai" type="number" min="0" max="100" />
+                    </td>
+                    <td id="error_nilai" style="color: red">Harap isi field nilai!</td> <!--tambahkan element untuk pesan kesalahan-->
+                </tr>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" id="batalButton">
+                            Batal
+                        </button>
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Kirim"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <script>
+        
+    </script>
+</body>
+</html>
